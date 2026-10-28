@@ -259,9 +259,10 @@
 
         <!-- User / Quick Profile Action -->
         <button onclick="openProfileModal()"
-          class="w-8 h-8 rounded-full bg-primary hover:bg-secondary text-on-primary flex items-center justify-center shrink-0 transition-colors shadow-sm cursor-pointer"
+          class="w-8 h-8 rounded-full overflow-hidden bg-primary hover:ring-2 hover:ring-secondary text-on-primary flex items-center justify-center shrink-0 transition-all shadow-sm cursor-pointer border border-surface-container-high"
           title="Lihat Profil Ringkas">
-          <span class="material-symbols-outlined text-[18px]">person</span>
+          <img src="foto/ganteng.png" class="w-full h-full object-cover object-top"
+            onerror="this.src='Tamplate Desain/foto/ganteng.png'" alt="Profil Ragiel" />
         </button>
 
         <!-- Mobile Menu Toggle Button -->
@@ -342,12 +343,12 @@
 
           <!-- Narrative Lead -->
           <div class="lg:col-span-7 space-y-space-md">
-            <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block font-medium">Arya
-              Danurdara • Portofolio Rekayasa</span>
+            <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block font-medium">Ragiel
+              Faqih N.R • Portofolio Rekayasa</span>
             <h1
               class="font-display text-[38px] leading-[46px] sm:text-display sm:leading-[64px] text-on-surface tracking-tight">
-              Software Engineer <span class="italic font-normal font-display text-secondary-accent">&amp;</span> Product
-              Designer.
+              Software Engineer <span class="italic font-normal font-display text-secondary-accent">&amp;</span> Quality
+              Assurance.
             </h1>
             <p class="font-body-lg text-body-md sm:text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
               Membangun platform terdistribusi berkinerja tinggi dengan estetika editorial minimalis dan ergonomi
@@ -375,22 +376,24 @@
               class="relative w-full max-w-sm aspect-[4/5] rounded-xl overflow-hidden shadow-[0_12px_32px_-8px_rgba(15,23,42,0.08),0_4px_12px_-2px_rgba(15,23,42,0.04)] bg-surface-container-high group border border-surface-container-high img-fallback-wrapper">
               <div class="img-placeholder">
                 <span class="material-symbols-outlined text-[48px] mb-2 opacity-60">person</span>
-                <span class="font-label-sm text-label-sm">Arya Danurdara</span>
+                <span class="font-label-sm text-label-sm">Ragiel Faqih Nabilal Ramadhan</span>
               </div>
-              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                data-alt="Editorial black and white portrait of software architect"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqg6vJ-bpIS6YEk5h9fazpznBJzaRhkaUHVM2uH4VdOepwlzaGkQ1U0ea0jXxsfWVJ4qlgpignNCOJwNbXvhCnOYazxKXrDntmlnjhPh3AkuTvooGEBGCQXKAHOUS0Fijgr9--W-rfRdilRySecni6xI98M6N2ErYjuwbvKExwqR3flI2GiBZvtbvLPCBjmGhLIwPeVtjynUr_1nERV0DRZUM8RtvNwmXYUTH4_rQ"
-                onerror="this.style.opacity='0'" onload="this.style.opacity='1'" alt="Arya Danurdara portrait" />
+              <img class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                data-alt="Editorial portrait of software architect Ragiel Faqih Nabilal Ramadhan" src="foto/ganteng.png"
+                onerror="this.src='Tamplate Desain/foto/ganteng.png'" onload="this.style.opacity='1'"
+                alt="Ragiel Faqih Nabilal Ramadhan portrait" />
               <!-- Floating Portrait Badge -->
               <div
                 class="absolute bottom-3 inset-x-3 p-3 rounded-lg bg-surface/90 backdrop-blur-md flex items-center justify-between shadow-sm border border-surface-container-high/80 z-10">
                 <div>
-                  <div class="font-headline-sm text-body-md font-semibold text-on-surface leading-tight">Arya Danurdara
+                  <div class="font-headline-sm text-body-md font-semibold text-on-surface leading-tight">Ragiel Faqih
+                    Nabilal Ramadhan
                   </div>
-                  <div class="font-label-sm text-label-sm text-on-surface-variant">S.Kom • Lead Design Engineer</div>
+                  <div class="font-label-sm text-label-sm text-on-surface-variant">Str.Kom • Web Developer</div>
                 </div>
                 <span
-                  class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold tracking-wider uppercase border border-secondary-fixed-dim/50">Full-Stack</span>
+                  class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold tracking-wider uppercase border border-secondary-fixed-dim/50">WEB
+                  Developer</span>
               </div>
             </div>
           </div>
@@ -1113,7 +1116,8 @@
       <div
         class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md pb-space-lg border-b border-surface-container-high">
         <div>
-          <div class="font-headline-sm text-headline-sm font-semibold text-on-surface">Arya Danurdara</div>
+          <div class="font-headline-sm text-headline-sm font-semibold text-on-surface">Ragiel Faqih Nabilal Ramadhan
+          </div>
           <div class="font-label-sm text-label-sm text-on-surface-variant">Software Engineer &amp; Product Designer •
             STEI ITB</div>
         </div>
@@ -1210,7 +1214,8 @@
       <div class="flex items-center justify-between pb-4 border-b border-surface-container-high">
         <div>
           <span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Curriculum Vitae</span>
-          <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Resume Arya Danurdara, S.Kom</h3>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Resume Ragiel Faqih Nabilal
+            Ramadhan, S.Kom</h3>
         </div>
         <button onclick="closeModal('cv-modal')"
           class="p-1 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
@@ -1359,10 +1364,12 @@
     <div
       class="relative w-full max-w-sm bg-surface-container-lowest rounded-2xl p-6 shadow-2xl border border-surface-container-high text-center">
       <div
-        class="w-16 h-16 rounded-full bg-primary text-on-primary mx-auto flex items-center justify-center mb-3 shadow-md">
-        <span class="material-symbols-outlined text-[32px]">person</span>
+        class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-3 shadow-md border-2 border-surface-container-high bg-primary">
+        <img src="foto/ganteng.png" class="w-full h-full object-cover object-top"
+          onerror="this.src='Tamplate Desain/foto/ganteng.png'" alt="Ragiel Faqih Nabilal Ramadhan" />
       </div>
-      <h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Arya Danurdara, S.Kom</h3>
+      <h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Ragiel Faqih Nabilal Ramadhan, S.Kom
+      </h3>
       <p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider mt-1">Lead Design Engineer &amp;
         Architect</p>
       <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
@@ -1592,7 +1599,7 @@
     // Download CV trigger
     function triggerCvDownload() {
       closeModal('cv-modal');
-      showToast("Mengunduh CV Arya Danurdara (PDF)...");
+      showToast("Mengunduh CV Ragiel Faqih Nabilal Ramadhan (PDF)...");
       // Simulation of generating printable document or direct download
       window.print();
     }
