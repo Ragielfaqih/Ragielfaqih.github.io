@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Ragiel Faqih Nabilal Ramadhan • Software Engineer & Quality Assurance" name="description" />
+  <title>Ragiel Faqih Nabilal Ramadhan • Software Engineer & Quality Assurance</title>
+
+  <!-- Google Fonts: JetBrains Mono, Newsreader, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Material Symbols Outlined -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#fbf9f5",
+            "surface-dim": "#dbdad6",
+            "surface-bright": "#fbf9f5",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f5f3ef",
+            "surface-container": "#efeeea",
+            "surface-container-high": "#eae8e4",
+            "surface-container-highest": "#e4e2de",
+            "on-surface": "#1b1c1a",
+            "on-surface-variant": "#45464d",
+            "inverse-surface": "#30312e",
+            "inverse-on-surface": "#f2f0ed",
+            "outline": "#76777d",
+            "outline-variant": "#c6c6cd",
+            "surface-tint": "#565e74",
+            "primary": "#0F172A",
+            "on-primary": "#ffffff",
+            "primary-container": "#131b2e",
+            "on-primary-container": "#7c839b",
+            "inverse-primary": "#bec6e0",
+            "secondary": "#904d00",
+            "secondary-accent": "#d97706",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#fe932c",
+            "on-secondary-container": "#663500",
+            "secondary-fixed": "#ffdcc3",
+            "secondary-fixed-dim": "#ffb77d",
+            "on-secondary-fixed": "#2f1500",
+            "on-secondary-fixed-variant": "#6e3900",
+            "tertiary": "#000000",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#100069",
+            "on-tertiary-container": "#7771ff",
+            "tertiary-interactive": "#4338ca",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "primary-fixed": "#dae2fd",
+            "primary-fixed-dim": "#bec6e0",
+            "on-primary-fixed": "#131b2e",
+            "on-primary-fixed-variant": "#3f465c",
+            "background": "#fbf9f5",
+            "on-background": "#1b1c1a",
+            "surface-variant": "#e4e2de"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "sm": "0.125rem",
+            "md": "0.375rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.75rem",
+            "space-xl": "3rem",
+            "space-2xl": "5rem",
+            "margin": "1.25rem",
+            "margin-tablet": "2.5rem",
+            "margin-desktop": "4rem",
+            "gutter": "1.5rem",
+            "gutter-desktop": "2.5rem"
+          },
+          fontFamily: {
+            "display": ["Newsreader", "Georgia", "serif"],
+            "headline-lg": ["Newsreader", "Georgia", "serif"],
+            "headline-md": ["Newsreader", "Georgia", "serif"],
+            "headline-sm": ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+            "label-md": ["JetBrains Mono", "monospace"],
+            "label-sm": ["JetBrains Mono", "monospace"]
+          },
+          fontSize: {
+            "display": ["56px", { lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "400" }],
+            "display-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "400" }],
+            "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "500" }],
+            "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "body-lg": ["18px", { lineHeight: "30px", fontWeight: "400" }],
+            "body-md": ["15px", { lineHeight: "24px", fontWeight: "400" }],
+            "body-sm": ["13px", { lineHeight: "20px", fontWeight: "400" }],
+            "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "500" }],
+            "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "500" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #fbf9f5;
+        color: #1b1c1a;
+      }
+
+      ::selection {
+        background-color: #0F172A;
+        color: #ffffff;
+      }
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #fbf9f5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #c6c6cd;
+      border-radius: 9999px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #76777d;
+    }
+
+    /* Modal transition */
+    .modal-backdrop {
+      transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
+    }
+
+    .modal-backdrop.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .modal-backdrop:not(.hidden) {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    /* Subtle image fallback style */
+    .img-fallback-wrapper {
+      position: relative;
+      background-color: #efeeea;
+    }
+
+    .img-fallback-wrapper img {
+      position: relative;
+      z-index: 2;
+    }
+
+    .img-fallback-wrapper .img-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      background: linear-gradient(135deg, #f5f3ef 0%, #eae8e4 100%);
+      color: #76777d;
+    }
+
+    /* Focus ring styling per DESIGN.md */
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+      border-color: #4338CA !important;
+      box-shadow: 0 0 0 3px rgba(67, 56, 202, 0.12) !important;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col justify-between">
+
+  <!-- HEADER NAVIGATION -->
+  <header
+    class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-surface-container-high shadow-[0_12px_32px_-8px_rgba(15,23,42,0.04),0_4px_12px_-2px_rgba(15,23,42,0.02)] transition-all duration-300"
+    id="main-header">
+    <div
+      class="h-20 max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between">
+
+      <!-- Logo / Monograph Title -->
+      <a class="flex items-center gap-space-sm group text-left" href="#tentang" title="Beranda Portofolio">
+        <span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">FOLIO / 01</span>
+        <span
+          class="font-headline-sm text-headline-sm font-semibold tracking-tight text-on-surface group-hover:text-secondary transition-colors">Arch.
+          Monograph</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-1 xl:gap-2" id="desktop-nav">
+        <a class="nav-link px-3 py-1 font-label-md text-label-md text-on-surface font-semibold bg-surface-container-high rounded transition-all"
+          href="#tentang">Tentang</a>
+        <a class="nav-link px-3 py-1 font-label-md text-label-md text-on-surface-variant hover:text-on-surface rounded transition-all"
+          href="#pendidikan">Pendidikan</a>
+        <a class="nav-link px-3 py-1 font-label-md text-label-md text-on-surface-variant hover:text-on-surface rounded transition-all"
+          href="#pengalaman">Pengalaman</a>
+        <a class="nav-link px-3 py-1 font-label-md text-label-md text-on-surface-variant hover:text-on-surface rounded transition-all"
+          href="#proyek">Proyek</a>
+        <a class="nav-link px-3 py-1 font-label-md text-label-md text-on-surface-variant hover:text-on-surface rounded transition-all"
+          href="#sertifikasi">Sertifikasi</a>
+        <a class="nav-link px-3 py-1 font-label-md text-label-md text-on-surface-variant hover:text-on-surface rounded transition-all"
+          href="#kontak">Kontak</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-space-sm sm:gap-space-md">
+        <!-- Download CV Button -->
+        <button onclick="openCvModal()"
+          class="inline-flex items-center gap-space-xs px-3 sm:px-space-md py-1.5 sm:py-space-sm rounded bg-primary text-on-primary hover:bg-surface-container-highest hover:text-on-surface font-label-md text-label-md transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)] -translate-y-0 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+          title="Pratinjau & Unduh Resume">
+          <span class="material-symbols-outlined text-[16px]">download</span>
+          <span class="hidden xs:inline">Unduh CV</span>
+          <span class="xs:hidden">CV</span>
+        </button>
+
+        <!-- User / Quick Profile Action -->
+        <button onclick="openProfileModal()"
+          class="w-8 h-8 rounded-full bg-primary hover:bg-secondary text-on-primary flex items-center justify-center shrink-0 transition-colors shadow-sm cursor-pointer"
+          title="Lihat Profil Ringkas">
+          <span class="material-symbols-outlined text-[18px]">person</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" onclick="toggleMobileMenu()"
+          class="lg:hidden p-1.5 rounded text-on-surface hover:bg-surface-container-high transition-colors"
+          aria-label="Buka Menu Navigasi">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-drawer"
+      class="hidden lg:hidden bg-surface border-b border-surface-container-high px-margin py-space-md shadow-lg transition-all">
+      <div class="flex flex-col gap-2">
+        <a onclick="closeMobileMenu()"
+          class="px-3 py-2 rounded font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+          href="#tentang">Tentang</a>
+        <a onclick="closeMobileMenu()"
+          class="px-3 py-2 rounded font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+          href="#pendidikan">Pendidikan</a>
+        <a onclick="closeMobileMenu()"
+          class="px-3 py-2 rounded font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+          href="#pengalaman">Pengalaman</a>
+        <a onclick="closeMobileMenu()"
+          class="px-3 py-2 rounded font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+          href="#proyek">Proyek</a>
+        <a onclick="closeMobileMenu()"
+          class="px-3 py-2 rounded font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+          href="#sertifikasi">Sertifikasi</a>
+        <a onclick="closeMobileMenu()"
+          class="px-3 py-2 rounded font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+          href="#kontak">Kontak</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="w-full pt-20 bg-surface flex-grow">
+    <div class="flex flex-col w-full">
+
+      <!-- ========================================== -->
+      <!-- SECTION 1: PERKENALAN DIRI & TENTANG      -->
+      <!-- ========================================== -->
+      <section
+        class="w-full max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl lg:py-space-2xl"
+        id="tentang">
+
+        <!-- Status Bar & Key Tech Stack Tags -->
+        <div
+          class="flex flex-wrap items-center justify-between gap-space-sm pb-space-lg mb-space-lg border-b border-surface-container-high">
+          <div class="flex flex-wrap items-center gap-space-sm">
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm border border-secondary-fixed-dim/40 shadow-xs">
+              <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+              Tersedia untuk Peluang &amp; Kontrak Riset
+            </span>
+            <span class="text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+              <span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>
+              Jakarta, ID (GMT+7)
+            </span>
+          </div>
+          <div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+            <span
+              class="px-2 py-0.5 rounded bg-surface-container-high hover:bg-surface-container-highest transition-colors">React</span>
+            <span
+              class="px-2 py-0.5 rounded bg-surface-container-high hover:bg-surface-container-highest transition-colors">TypeScript</span>
+            <span
+              class="px-2 py-0.5 rounded bg-surface-container-high hover:bg-surface-container-highest transition-colors">Go</span>
+            <span
+              class="px-2 py-0.5 rounded bg-surface-container-high hover:bg-surface-container-highest transition-colors">Rust</span>
+          </div>
+        </div>
+
+        <!-- Hero Editorial Spread -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop items-center py-space-lg">
+
+          <!-- Narrative Lead -->
+          <div class="lg:col-span-7 space-y-space-md">
+            <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block font-medium">Arya
+              Danurdara • Portofolio Rekayasa</span>
+            <h1
+              class="font-display text-[38px] leading-[46px] sm:text-display sm:leading-[64px] text-on-surface tracking-tight">
+              Software Engineer <span class="italic font-normal font-display text-secondary-accent">&amp;</span> Product
+              Designer.
+            </h1>
+            <p class="font-body-lg text-body-md sm:text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+              Membangun platform terdistribusi berkinerja tinggi dengan estetika editorial minimalis dan ergonomi
+              kognitif yang jernih.
+            </p>
+
+            <!-- Hero CTAs -->
+            <div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+              <a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded bg-primary text-on-primary hover:bg-surface-container-highest hover:text-on-surface font-label-md text-label-md transition-all shadow-sm -translate-y-0 hover:-translate-y-0.5 active:translate-y-0"
+                href="#proyek">
+                <span>Lihat Karya</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+              </a>
+              <a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-md text-label-md transition-all border border-surface-container-highest/60 hover:-translate-y-0.5 active:translate-y-0"
+                href="#kontak">
+                <span class="material-symbols-outlined text-[16px] text-secondary">mail</span>
+                <span>Hubungi</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Editorial Portrait Media Display -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div
+              class="relative w-full max-w-sm aspect-[4/5] rounded-xl overflow-hidden shadow-[0_12px_32px_-8px_rgba(15,23,42,0.08),0_4px_12px_-2px_rgba(15,23,42,0.04)] bg-surface-container-high group border border-surface-container-high img-fallback-wrapper">
+              <div class="img-placeholder">
+                <span class="material-symbols-outlined text-[48px] mb-2 opacity-60">person</span>
+                <span class="font-label-sm text-label-sm">Arya Danurdara</span>
+              </div>
+              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                data-alt="Editorial black and white portrait of software architect"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqg6vJ-bpIS6YEk5h9fazpznBJzaRhkaUHVM2uH4VdOepwlzaGkQ1U0ea0jXxsfWVJ4qlgpignNCOJwNbXvhCnOYazxKXrDntmlnjhPh3AkuTvooGEBGCQXKAHOUS0Fijgr9--W-rfRdilRySecni6xI98M6N2ErYjuwbvKExwqR3flI2GiBZvtbvLPCBjmGhLIwPeVtjynUr_1nERV0DRZUM8RtvNwmXYUTH4_rQ"
+                onerror="this.style.opacity='0'" onload="this.style.opacity='1'" alt="Arya Danurdara portrait" />
+              <!-- Floating Portrait Badge -->
+              <div
+                class="absolute bottom-3 inset-x-3 p-3 rounded-lg bg-surface/90 backdrop-blur-md flex items-center justify-between shadow-sm border border-surface-container-high/80 z-10">
+                <div>
+                  <div class="font-headline-sm text-body-md font-semibold text-on-surface leading-tight">Arya Danurdara
+                  </div>
+                  <div class="font-label-sm text-label-sm text-on-surface-variant">S.Kom • Lead Design Engineer</div>
+                </div>
+                <span
+                  class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold tracking-wider uppercase border border-secondary-fixed-dim/50">Full-Stack</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Quantitative Metric Counters -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-xl my-space-xl border-t border-surface-container-high">
+          <div class="p-space-sm group">
+            <div
+              class="font-display text-headline-lg text-on-surface font-semibold group-hover:text-secondary transition-colors">
+              04<span class="text-secondary text-headline-sm font-label-sm ml-1">+ Thn</span>
+            </div>
+            <div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Pengalaman
+              Rekayasa</div>
+          </div>
+          <div class="p-space-sm group">
+            <div
+              class="font-display text-headline-lg text-on-surface font-semibold group-hover:text-secondary transition-colors">
+              28<span class="text-secondary text-headline-sm font-label-sm ml-1">+</span>
+            </div>
+            <div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Sistem
+              Produksi</div>
+          </div>
+          <div class="p-space-sm group">
+            <div
+              class="font-display text-headline-lg text-on-surface font-semibold group-hover:text-secondary transition-colors">
+              99.4<span class="text-secondary text-headline-sm font-label-sm ml-0.5">%</span>
+            </div>
+            <div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Uptime SLA
+            </div>
+          </div>
+          <div class="p-space-sm group">
+            <div
+              class="font-display text-headline-lg text-on-surface font-semibold group-hover:text-secondary transition-colors">
+              1.2k<span class="text-secondary text-headline-sm font-label-sm ml-1">+</span>
+            </div>
+            <div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Kontribusi
+              Komit</div>
+          </div>
+        </div>
+
+        <!-- Architectural Discipline & Competencies -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm pt-space-sm">
+
+          <div
+            class="p-space-md rounded-xl bg-surface-container-lowest border border-surface-container-high flex items-center gap-space-sm shadow-[0_2px_8px_rgba(15,23,42,0.02)] hover:border-secondary transition-all">
+            <div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+              <span class="material-symbols-outlined text-[20px]">terminal</span>
+            </div>
+            <div>
+              <div class="font-headline-sm text-body-md font-semibold text-on-surface">Frontend</div>
+              <div class="font-label-sm text-label-sm text-on-surface-variant">Next.js • TypeScript • Tailwind</div>
+            </div>
+          </div>
+
+          <div
+            class="p-space-md rounded-xl bg-surface-container-lowest border border-surface-container-high flex items-center gap-space-sm shadow-[0_2px_8px_rgba(15,23,42,0.02)] hover:border-secondary transition-all">
+            <div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+              <span class="material-symbols-outlined text-[20px]">database</span>
+            </div>
+            <div>
+              <div class="font-headline-sm text-body-md font-semibold text-on-surface">Backend &amp; API</div>
+              <div class="font-label-sm text-label-sm text-on-surface-variant">Go • PostgreSQL • Redis</div>
+            </div>
+          </div>
+
+          <div
+            class="p-space-md rounded-xl bg-surface-container-lowest border border-surface-container-high flex items-center gap-space-sm shadow-[0_2px_8px_rgba(15,23,42,0.02)] hover:border-secondary transition-all">
+            <div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+              <span class="material-symbols-outlined text-[20px]">token</span>
+            </div>
+            <div>
+              <div class="font-headline-sm text-body-md font-semibold text-on-surface">Design Systems</div>
+              <div class="font-label-sm text-label-sm text-on-surface-variant">Figma Tokens • Storybook</div>
+            </div>
+          </div>
+
+          <div
+            class="p-space-md rounded-xl bg-surface-container-lowest border border-surface-container-high flex items-center gap-space-sm shadow-[0_2px_8px_rgba(15,23,42,0.02)] hover:border-secondary transition-all">
+            <div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+              <span class="material-symbols-outlined text-[20px]">cloud_done</span>
+            </div>
+            <div>
+              <div class="font-headline-sm text-body-md font-semibold text-on-surface">Cloud &amp; DevOps</div>
+              <div class="font-label-sm text-label-sm text-on-surface-variant">Docker • K8s • AWS CI/CD</div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION 2: RIWAYAT PENDIDIKAN & AKADEMIK   -->
+      <!-- ========================================== -->
+      <section class="w-full bg-surface-container-low py-space-2xl border-y border-surface-container-high"
+        id="pendidikan">
+        <div class="max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+
+          <!-- Section Title & Honors Ribbon -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+            <div>
+              <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-medium">Akademik
+                &amp; Riset</span>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface font-medium">Riwayat Pendidikan</h2>
+            </div>
+            <div
+              class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm border border-surface-container-high inline-flex items-center gap-2 self-start md:self-auto">
+              <span class="material-symbols-outlined text-secondary text-[18px]">workspace_premium</span>
+              <span>IPK <strong>3.85 / 4.00</strong> — Magna Cum Laude</span>
+            </div>
+          </div>
+
+          <!-- Primary Degree Container -->
+          <div
+            class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm border border-surface-container-high">
+            <div
+              class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container-high">
+              <div>
+                <span
+                  class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm mr-2 font-mono">2020
+                  — 2024</span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant">Institut Teknologi Bandung (STEI
+                  ITB)</span>
+                <h3 class="font-headline-lg text-headline-md text-on-surface font-medium mt-1">Sarjana Komputer (S.Kom)
+                  — Teknik Informatika</h3>
+              </div>
+              <span
+                class="px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold self-start md:self-auto border border-secondary-fixed-dim/50">
+                Akreditasi Unggul
+              </span>
+            </div>
+
+            <!-- Thesis Focus & Honor List Split -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-md">
+              <div class="space-y-space-xs">
+                <div class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Fokus
+                  Riset Tugas Akhir</div>
+                <p class="font-body-md text-body-md text-on-surface font-medium leading-snug">
+                  "Optimasi Reduksi Beban Kognitif Antarmuka Melalui Arsitektur Komponen Desain Terdistribusi"
+                </p>
+                <div class="font-label-sm text-label-sm text-on-surface-variant">
+                  Nilai Sidang: <span class="font-semibold text-on-surface">A (94/100)</span> • Pembimbing: Dr. Eng. Ayu
+                  Kartika
+                </div>
+              </div>
+
+              <div class="space-y-space-xs">
+                <div class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Prestasi
+                  &amp; Kehormatan</div>
+                <ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+                  <li class="flex items-center justify-between">
+                    <span>• Dean's List of Academic Excellence</span>
+                    <span class="font-label-sm text-label-sm text-secondary font-mono">6 Semester</span>
+                  </li>
+                  <li class="flex items-center justify-between">
+                    <span>• Djarum Beasiswa Plus &amp; Leadership</span>
+                    <span class="font-label-sm text-label-sm text-secondary font-mono">2022 — 2023</span>
+                  </li>
+                  <li class="flex items-center justify-between">
+                    <span>• Juara 1 National Tech Hackathon</span>
+                    <span class="font-label-sm text-label-sm text-secondary font-mono">Kemenristek</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Credential Hash Footer Strip -->
+          <div
+            class="mt-space-md p-space-sm rounded-xl bg-surface-container-high flex flex-wrap items-center justify-between gap-space-xs font-label-sm text-label-sm text-on-surface-variant border border-surface-container-highest">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+              <span>Ijazah PDDikti: <strong class="text-on-surface font-mono">13520044/STEI-ITB/2024</strong></span>
+            </div>
+            <div class="font-mono text-[11px] text-on-surface-variant">SHA256: 8f9b402e88a3cf1204d60c...9a12e</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION 3: PENGALAMAN KERJA & MAGANG       -->
+      <!-- ========================================== -->
+      <section class="w-full max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-2xl"
+        id="pengalaman">
+
+        <!-- Section Header with Operational Metrics -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+          <div>
+            <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-medium">Rekam
+              Jejak</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface font-medium">Pengalaman Kerja &amp; Magang</h2>
+          </div>
+          <div class="flex items-center gap-space-xs font-label-sm text-label-sm self-start md:self-auto">
+            <span
+              class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface border border-surface-container-highest"><strong>30%</strong>
+              Reduksi Latensi</span>
+            <span
+              class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface border border-surface-container-highest"><strong>14+</strong>
+              Sprint Terkelola</span>
+          </div>
+        </div>
+
+        <!-- Experience Cards Stack -->
+        <div class="space-y-space-md">
+
+          <!-- Experience Card 1 -->
+          <div
+            class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-container-high shadow-sm hover:border-secondary transition-all">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xs mb-space-xs">
+              <div>
+                <div class="flex flex-wrap items-center gap-2">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">PT Nusa Teknologi Mandiri
+                    (Nexus Group)</h3>
+                  <span
+                    class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm border border-secondary-fixed-dim/40">Fintech
+                    Core</span>
+                </div>
+                <div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Software Engineer Intern — Core
+                  Financial Infrastructure</div>
+              </div>
+              <div class="font-label-sm text-label-sm text-secondary font-mono">Feb 2024 — Agu 2024</div>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm leading-relaxed">
+              Modernisasi gateway otorisasi pembayaran lintas kanal dengan microservices Go berkecepatan tinggi.
+            </p>
+            <div
+              class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs border-t border-surface-container-high">
+              <div class="flex flex-wrap gap-space-sm font-label-sm text-label-sm text-secondary font-semibold">
+                <span>• -32.4% Latensi Query</span>
+                <span>• 1,450+ RPS Throughput</span>
+                <span>• 99.98% Uptime</span>
+              </div>
+              <div class="flex gap-1 font-label-sm text-label-sm">
+                <span class="px-2 py-0.5 rounded bg-surface-container-high">Go</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container-high">PostgreSQL</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container-high">Redis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 2 -->
+          <div
+            class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-container-high shadow-sm hover:border-secondary transition-all">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xs mb-space-xs">
+              <div>
+                <div class="flex flex-wrap items-center gap-2">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Studio Antara Digital
+                    Kreasi</h3>
+                  <span
+                    class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm border border-secondary-fixed-dim/40">Design
+                    System</span>
+                </div>
+                <div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">UI/UX &amp; Frontend Intern —
+                  Foundry UI</div>
+              </div>
+              <div class="font-label-sm text-label-sm text-secondary font-mono">Jul 2023 — Jan 2024</div>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm leading-relaxed">
+              Membangun pustaka Design Tokens lintas platform Figma-to-Code untuk 4 produk komersial studio.
+            </p>
+            <div
+              class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs border-t border-surface-container-high">
+              <div class="flex flex-wrap gap-space-sm font-label-sm text-label-sm text-secondary font-semibold">
+                <span>• 45% Handoff Lebih Cepat</span>
+                <span>• 50+ Komponen Reusable</span>
+                <span>• Skor 96+ Lighthouse</span>
+              </div>
+              <div class="flex gap-1 font-label-sm text-label-sm">
+                <span class="px-2 py-0.5 rounded bg-surface-container-high">React</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container-high">Tailwind</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container-high">Storybook</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 3 -->
+          <div
+            class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-container-high shadow-sm hover:border-secondary transition-all">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xs mb-space-xs">
+              <div>
+                <div class="flex flex-wrap items-center gap-2">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Center for Computational
+                    Intelligence Lab</h3>
+                  <span
+                    class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm border border-secondary-fixed-dim/40">IoT
+                    Analytics</span>
+                </div>
+                <div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Asisten Peneliti &amp; Data
+                  Automator</div>
+              </div>
+              <div class="font-label-sm text-label-sm text-secondary font-mono">Sep 2022 — Mei 2023</div>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm leading-relaxed">
+              Pemrosesan streaming telemetri waktu-nyata dan model deteksi anomali suhu rantai dingin vaksin.
+            </p>
+            <div
+              class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs border-t border-surface-container-high">
+              <div class="flex flex-wrap gap-space-sm font-label-sm text-label-sm text-secondary font-semibold">
+                <span>• 4.8x Kecepatan Pipeline</span>
+                <span>• 94.8% F1-Score Anomali</span>
+                <span>• 1 Publikasi IEEE</span>
+              </div>
+              <div class="flex gap-1 font-label-sm text-label-sm">
+                <span class="px-2 py-0.5 rounded bg-surface-container-high">Python</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container-high">Airflow</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container-high">FastAPI</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION 4: GALERI PROYEK UNGGULAN         -->
+      <!-- ========================================== -->
+      <section class="w-full bg-surface-container-low py-space-2xl border-y border-surface-container-high" id="proyek">
+        <div class="max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+
+          <!-- Gallery Title & Global Metric -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-md">
+            <div>
+              <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-medium">Karya
+                Pilihan</span>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface font-medium">Galeri Proyek</h2>
+            </div>
+            <span class="font-label-sm text-label-sm text-on-surface-variant self-start md:self-auto font-mono">
+              18+ Proyek Selesai • 1.2M+ MAU
+            </span>
+          </div>
+
+          <!-- Interactive Filter Tabs -->
+          <div class="flex flex-wrap items-center gap-2 mb-space-lg">
+            <button onclick="filterProjects('all')"
+              class="project-filter-btn px-3 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm transition-all cursor-pointer"
+              data-tag="all">
+              Semua Proyek
+            </button>
+            <button onclick="filterProjects('fintech')"
+              class="project-filter-btn px-3 py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all cursor-pointer"
+              data-tag="fintech">
+              Fintech
+            </button>
+            <button onclick="filterProjects('healthtech')"
+              class="project-filter-btn px-3 py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all cursor-pointer"
+              data-tag="healthtech">
+              Healthtech
+            </button>
+            <button onclick="filterProjects('pos')"
+              class="project-filter-btn px-3 py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all cursor-pointer"
+              data-tag="pos">
+              Point of Sale
+            </button>
+            <button onclick="filterProjects('cli')"
+              class="project-filter-btn px-3 py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all cursor-pointer"
+              data-tag="cli">
+              CLI &amp; Systems
+            </button>
+          </div>
+
+          <!-- Flagship Featured Showcase: AuraWealth -->
+          <div
+            class="project-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm border border-surface-container-high mb-space-lg group transition-all"
+            data-tags="fintech all">
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+
+              <div class="lg:col-span-5 p-space-lg flex flex-col justify-between space-y-space-md">
+                <div class="space-y-space-xs">
+                  <div class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Karya
+                    Unggulan • 2024</div>
+                  <h3 class="font-headline-lg text-headline-md text-on-surface font-medium">AuraWealth — Platform
+                    Investasi Adaptif</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Advisory portofolio ritel real-time dengan kalkulasi risiko sub-detik dan antarmuka editorial.
+                  </p>
+                  <div class="flex flex-wrap gap-1 pt-space-xs font-label-sm text-label-sm">
+                    <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface">Next.js 14</span>
+                    <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface">FastAPI</span>
+                    <span class="px-2 py-0.5 rounded bg-surface-container text-on-surface">PostgreSQL</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-space-sm pt-space-xs">
+                  <button onclick="openProjectModal('aurawealth')"
+                    class="inline-flex items-center gap-1 px-3 py-1.5 rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-surface-container-highest hover:text-on-surface transition-all cursor-pointer">
+                    <span>Pratinjau Live</span>
+                    <span class="material-symbols-outlined text-[14px]">north_east</span>
+                  </button>
+                  <button onclick="openRepoModal('aurawealth')"
+                    class="inline-flex items-center gap-1 px-3 py-1.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-all cursor-pointer border border-surface-container-highest">
+                    <span>Repositori</span>
+                    <span class="material-symbols-outlined text-[14px]">code</span>
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="lg:col-span-7 bg-surface-container-high relative min-h-[280px] overflow-hidden img-fallback-wrapper cursor-pointer"
+                onclick="openProjectModal('aurawealth')">
+                <div class="img-placeholder">
+                  <span class="material-symbols-outlined text-[48px] mb-2 opacity-60">candlestick_chart</span>
+                  <span class="font-label-sm text-label-sm">AuraWealth UI Dashboard</span>
+                </div>
+                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  data-alt="Fintech investment portfolio dashboard UI"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsrfn3qyfKlI2BMAlN6HSbmaMLLEi_AbtlSIdtI3MWTHtRFnB91Es4jdCH20c8VdSXCxu1iJm-upG1CyjBmlmcDXcDR75V9JpZqw5ZsuR_iqvrEnamwjdXIP4WJvyDA_fI9wEhv3duOYSoRtfMgJBf1c5KM0LM-Y-VmEXUF2yabeagUYBFogkfsulZl3HJo7FNbh189akGd21Rav-g525ykujBM80-UFw7Fkgfe2o"
+                  onerror="this.style.opacity='0'" onload="this.style.opacity='1'" alt="AuraWealth Dashboard" />
+                <span
+                  class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded text-label-sm font-label-sm text-on-surface border border-surface-container-high/80 z-10 shadow-xs font-mono">
+                  14.5k Pengguna Aktif
+                </span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Secondary Portfolio Project Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+
+            <!-- Project Card 1: KlinikSatu -->
+            <div
+              class="project-item rounded-2xl bg-surface-container-lowest border border-surface-container-high overflow-hidden shadow-sm flex flex-col justify-between group hover:border-secondary transition-all"
+              data-tags="healthtech all">
+              <div
+                class="relative aspect-[16/10] overflow-hidden bg-surface-container img-fallback-wrapper cursor-pointer"
+                onclick="openProjectModal('kliniksatu')">
+                <div class="img-placeholder">
+                  <span class="material-symbols-outlined text-[40px] mb-1 opacity-60">medical_services</span>
+                  <span class="font-label-sm text-label-sm">KlinikSatu Telemedisin</span>
+                </div>
+                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  data-alt="Telehealth mobile app interface"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2Uh0oQtGzVc897HfoL7g3nXpePzdJEyEuNnxt5TNDL2TIZImsAutgP2ozXY-ROS4ygiK1LioQzupP25u4qAGkwOZTxz5um14-6qVYVTmdng--77xbkYRUE8bW9x7FUhAt8q0TFoiU6n6aziHsgdaFEMfuvRip3y-NXmR9MDnyE3KMRDZ84KFkZR1FPaEyrn-LJ_1A2zWYusK3pQWmt5trVFg4MlCkGDabj4wTYHA"
+                  onerror="this.style.opacity='0'" onload="this.style.opacity='1'" alt="KlinikSatu App" />
+                <span
+                  class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 backdrop-blur-md font-label-sm text-label-sm border border-surface-container-high/60 z-10 font-mono">
+                  Healthtech
+                </span>
+              </div>
+              <div class="p-space-md space-y-space-xs flex-grow flex flex-col justify-between">
+                <div>
+                  <h4
+                    class="font-headline-sm text-body-md font-semibold text-on-surface group-hover:text-secondary transition-colors cursor-pointer"
+                    onclick="openProjectModal('kliniksatu')">
+                    KlinikSatu: Telemedisin
+                  </h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+                    WebRTC konsultasi video di wilayah jaringan terbatas.
+                  </p>
+                </div>
+                <div class="flex items-center justify-between pt-2 border-t border-surface-container-high mt-2">
+                  <div class="flex gap-1 font-label-sm text-label-sm">
+                    <span class="px-2 py-0.5 rounded bg-surface-container">React Native</span>
+                    <span class="px-2 py-0.5 rounded bg-surface-container">WebRTC</span>
+                  </div>
+                  <button onclick="openProjectModal('kliniksatu')"
+                    class="text-secondary hover:underline font-label-sm text-label-sm flex items-center gap-0.5 cursor-pointer">
+                    <span>Detail</span>
+                    <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 2: Komorebi POS -->
+            <div
+              class="project-item rounded-2xl bg-surface-container-lowest border border-surface-container-high overflow-hidden shadow-sm flex flex-col justify-between group hover:border-secondary transition-all"
+              data-tags="pos all">
+              <div
+                class="relative aspect-[16/10] overflow-hidden bg-surface-container img-fallback-wrapper cursor-pointer"
+                onclick="openProjectModal('komorebi')">
+                <div class="img-placeholder">
+                  <span class="material-symbols-outlined text-[40px] mb-1 opacity-60">point_of_sale</span>
+                  <span class="font-label-sm text-label-sm">Komorebi POS UI</span>
+                </div>
+                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  data-alt="Coffee shop POS interface"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHxjhXWpXT0l9pgNIIzu6FmK2PqQxoY7bdDMl0WjrffI3jw30EMEjZFj_2GML32tZJKKllYts-UQFmyl1STzKQQchKOsnRdYKJ3Mum6ojC078yl5doct_IAlJv7mHp2vJmx-3plUHHupnSwb8OzclntnnQ0yA8aSXsU-a5Ll2-dNiXV6ec3h1B1eLVzVu-qKRfj3pK-YkwUpq0ZwNmOwXdvwJghFl7WDF6FaG8mXk"
+                  onerror="this.style.opacity='0'" onload="this.style.opacity='1'" alt="Komorebi POS" />
+                <span
+                  class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 backdrop-blur-md font-label-sm text-label-sm border border-surface-container-high/60 z-10 font-mono">
+                  Point of Sale
+                </span>
+              </div>
+              <div class="p-space-md space-y-space-xs flex-grow flex flex-col justify-between">
+                <div>
+                  <h4
+                    class="font-headline-sm text-body-md font-semibold text-on-surface group-hover:text-secondary transition-colors cursor-pointer"
+                    onclick="openProjectModal('komorebi')">
+                    Komorebi: Core POS
+                  </h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+                    Sistem kasir offline-first sync engine untuk 12 gerai ritel.
+                  </p>
+                </div>
+                <div class="flex items-center justify-between pt-2 border-t border-surface-container-high mt-2">
+                  <div class="flex gap-1 font-label-sm text-label-sm">
+                    <span class="px-2 py-0.5 rounded bg-surface-container">Go Engine</span>
+                    <span class="px-2 py-0.5 rounded bg-surface-container">SQLite</span>
+                  </div>
+                  <button onclick="openProjectModal('komorebi')"
+                    class="text-secondary hover:underline font-label-sm text-label-sm flex items-center gap-0.5 cursor-pointer">
+                    <span>Detail</span>
+                    <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 3: WarpSync CLI -->
+            <div
+              class="project-item rounded-2xl bg-surface-container-lowest border border-surface-container-high overflow-hidden shadow-sm flex flex-col justify-between group hover:border-secondary transition-all"
+              data-tags="cli all">
+              <div
+                class="relative aspect-[16/10] overflow-hidden bg-surface-container img-fallback-wrapper cursor-pointer"
+                onclick="openProjectModal('warpsync')">
+                <div class="img-placeholder">
+                  <span class="material-symbols-outlined text-[40px] mb-1 opacity-60">terminal</span>
+                  <span class="font-label-sm text-label-sm">WarpSync Rust CLI</span>
+                </div>
+                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  data-alt="Terminal CLI compilation tools"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA_MVlqU9bK4Km7e3pZRPB531FZW-qi7W4ShyHQXAkGpG590MNaqwaJs4NkI3zytNHDVyl28biLN5jpb6erBWepPwbUkxN1x83I7Me50MQT50JxKYCzTQGcSbIWuoGNPGAgT15QjFmSBkk-hAZyqy-B26LMi7y5kS5crU6xMKYQZwv8dV2_Qd1etwCg5dendQunF2yi2C4wGVfCulRVIdbMyO8TMUSqsGkuNZAKlY"
+                  onerror="this.style.opacity='0'" onload="this.style.opacity='1'" alt="WarpSync CLI" />
+                <span
+                  class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface/90 backdrop-blur-md font-label-sm text-label-sm border border-surface-container-high/60 z-10 font-mono">
+                  CLI &amp; Tooling
+                </span>
+              </div>
+              <div class="p-space-md space-y-space-xs flex-grow flex flex-col justify-between">
+                <div>
+                  <h4
+                    class="font-headline-sm text-body-md font-semibold text-on-surface group-hover:text-secondary transition-colors cursor-pointer"
+                    onclick="openProjectModal('warpsync')">
+                    WarpSync: Monorepo CLI
+                  </h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+                    CLI Rust untuk build caching monorepo (520+ Stars).
+                  </p>
+                </div>
+                <div class="flex items-center justify-between pt-2 border-t border-surface-container-high mt-2">
+                  <div class="flex gap-1 font-label-sm text-label-sm">
+                    <span class="px-2 py-0.5 rounded bg-surface-container">Rust</span>
+                    <span class="px-2 py-0.5 rounded bg-surface-container">WASM</span>
+                  </div>
+                  <button onclick="openProjectModal('warpsync')"
+                    class="text-secondary hover:underline font-label-sm text-label-sm flex items-center gap-0.5 cursor-pointer">
+                    <span>Detail</span>
+                    <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION 5: SERTIFIKASI & KREDENSIAL        -->
+      <!-- ========================================== -->
+      <section class="w-full max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-2xl"
+        id="sertifikasi">
+
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+          <div>
+            <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-medium">Kredensial
+              Resmi</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface font-medium">Sertifikasi Profesional</h2>
+          </div>
+          <span class="font-label-sm text-label-sm text-on-surface-variant font-mono self-start md:self-auto">
+            4 Kredensial Terverifikasi
+          </span>
+        </div>
+
+        <!-- Credentials Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+
+          <!-- Cert 1: AWS -->
+          <div
+            class="p-space-md rounded-2xl bg-surface-container-lowest border border-surface-container-high shadow-sm flex flex-col justify-between space-y-space-sm hover:border-secondary transition-all">
+            <div class="space-y-space-xs">
+              <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+                <span class="material-symbols-outlined text-[22px]">cloud</span>
+              </div>
+              <span class="font-label-sm text-label-sm text-secondary block font-semibold">AWS</span>
+              <h3 class="font-headline-sm text-body-md font-semibold text-on-surface">Solutions Architect — Associate
+              </h3>
+            </div>
+            <div
+              class="pt-space-xs border-t border-surface-container-high flex items-center justify-between font-label-sm text-label-sm">
+              <span class="text-on-surface-variant font-mono">Aktif s.d. 2026</span>
+              <button onclick="openCertModal('aws')"
+                class="text-secondary hover:text-tertiary-interactive hover:underline flex items-center gap-0.5 cursor-pointer">
+                <span>Verifikasi</span>
+                <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 2: Google UX -->
+          <div
+            class="p-space-md rounded-2xl bg-surface-container-lowest border border-surface-container-high shadow-sm flex flex-col justify-between space-y-space-sm hover:border-secondary transition-all">
+            <div class="space-y-space-xs">
+              <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+                <span class="material-symbols-outlined text-[22px]">devices</span>
+              </div>
+              <span class="font-label-sm text-label-sm text-secondary block font-semibold">Google</span>
+              <h3 class="font-headline-sm text-body-md font-semibold text-on-surface">UX Design Professional Certificate
+              </h3>
+            </div>
+            <div
+              class="pt-space-xs border-t border-surface-container-high flex items-center justify-between font-label-sm text-label-sm">
+              <span class="text-on-surface-variant font-mono">Seumur Hidup</span>
+              <button onclick="openCertModal('google')"
+                class="text-secondary hover:text-tertiary-interactive hover:underline flex items-center gap-0.5 cursor-pointer">
+                <span>Verifikasi</span>
+                <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 3: Meta Front-End -->
+          <div
+            class="p-space-md rounded-2xl bg-surface-container-lowest border border-surface-container-high shadow-sm flex flex-col justify-between space-y-space-sm hover:border-secondary transition-all">
+            <div class="space-y-space-xs">
+              <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+                <span class="material-symbols-outlined text-[22px]">code_blocks</span>
+              </div>
+              <span class="font-label-sm text-label-sm text-secondary block font-semibold">Meta</span>
+              <h3 class="font-headline-sm text-body-md font-semibold text-on-surface">Front-End Developer Specialization
+              </h3>
+            </div>
+            <div
+              class="pt-space-xs border-t border-surface-container-high flex items-center justify-between font-label-sm text-label-sm">
+              <span class="text-on-surface-variant font-mono">Seumur Hidup</span>
+              <button onclick="openCertModal('meta')"
+                class="text-secondary hover:text-tertiary-interactive hover:underline flex items-center gap-0.5 cursor-pointer">
+                <span>Verifikasi</span>
+                <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 4: ScrumMaster -->
+          <div
+            class="p-space-md rounded-2xl bg-surface-container-lowest border border-surface-container-high shadow-sm flex flex-col justify-between space-y-space-sm hover:border-secondary transition-all">
+            <div class="space-y-space-xs">
+              <div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+                <span class="material-symbols-outlined text-[22px]">groups</span>
+              </div>
+              <span class="font-label-sm text-label-sm text-secondary block font-semibold">Scrum Alliance</span>
+              <h3 class="font-headline-sm text-body-md font-semibold text-on-surface">Certified ScrumMaster® (CSM)</h3>
+            </div>
+            <div
+              class="pt-space-xs border-t border-surface-container-high flex items-center justify-between font-label-sm text-label-sm">
+              <span class="text-on-surface-variant font-mono">Aktif s.d. 2026</span>
+              <button onclick="openCertModal('scrum')"
+                class="text-secondary hover:text-tertiary-interactive hover:underline flex items-center gap-0.5 cursor-pointer">
+                <span>Verifikasi</span>
+                <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION 6: HUBUNGI & AJAKAN KOLABORASI     -->
+      <!-- ========================================== -->
+      <section class="w-full bg-primary text-on-primary py-space-2xl" id="kontak">
+        <div
+          class="max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl text-center space-y-space-md">
+
+          <span
+            class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest block font-medium">Kolaborasi
+            Terbuka</span>
+          <h2 class="font-display text-[32px] sm:text-display text-on-primary max-w-2xl mx-auto leading-tight">
+            Mari Ciptakan Produk Digital yang Bermakna.
+          </h2>
+          <p class="font-body-md text-body-md text-primary-fixed-dim max-w-lg mx-auto leading-relaxed">
+            Terbuka untuk konsultasi arsitektur perangkat lunak, engineering leadership, atau diskusi sistem desain.
+          </p>
+
+          <!-- Interactive Contact Actions -->
+          <div class="flex flex-wrap items-center justify-center gap-space-md pt-space-sm">
+            <button onclick="copyEmailToClipboard()"
+              class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded bg-surface text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all shadow-md active:scale-95 cursor-pointer"
+              title="Klik untuk menyalin alamat email">
+              <span class="material-symbols-outlined text-[16px] text-secondary">mail</span>
+              <span id="email-text">arya.danurdara@alumni.itb.ac.id</span>
+              <span class="material-symbols-outlined text-[14px] opacity-60">content_copy</span>
+            </button>
+            <button onclick="openContactModal()"
+              class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded border border-surface-container-highest/30 text-on-primary hover:bg-surface-container-highest/20 font-label-md text-label-md transition-all cursor-pointer">
+              <span class="material-symbols-outlined text-[16px] text-secondary-fixed">schedule</span>
+              <span>Diskusi 15 Menit</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========================================== -->
+  <!-- FOOTER                                     -->
+  <!-- ========================================== -->
+  <footer class="w-full bg-surface-container-low border-t border-surface-container-high">
+    <div class="max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+
+      <div
+        class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md pb-space-lg border-b border-surface-container-high">
+        <div>
+          <div class="font-headline-sm text-headline-sm font-semibold text-on-surface">Arya Danurdara</div>
+          <div class="font-label-sm text-label-sm text-on-surface-variant">Software Engineer &amp; Product Designer •
+            STEI ITB</div>
+        </div>
+        <div class="flex flex-wrap items-center gap-space-md font-label-md text-label-md text-on-surface-variant">
+          <a class="hover:text-on-surface transition-colors" href="#tentang">Tentang</a>
+          <a class="hover:text-on-surface transition-colors" href="#pendidikan">Pendidikan</a>
+          <a class="hover:text-on-surface transition-colors" href="#pengalaman">Pengalaman</a>
+          <a class="hover:text-on-surface transition-colors" href="#proyek">Proyek</a>
+          <a class="hover:text-on-surface transition-colors" href="#sertifikasi">Sertifikasi</a>
+          <a class="hover:text-on-surface transition-colors" href="#kontak">Kontak</a>
+        </div>
+      </div>
+
+      <div
+        class="pt-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+        <div>Bespoke Monograph © 2025 • Editorial Minimalism • Jakarta, Indonesia</div>
+        <div class="flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          <span>Status: Terbuka untuk eksplorasi baru</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- MODALS & INTERACTIVE OVERLAYS             -->
+  <!-- ========================================== -->
+
+  <!-- 1. Contact / Schedule Discussion Modal -->
+  <div id="contact-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/60 backdrop-blur-sm">
+    <div
+      class="relative w-full max-w-lg bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-2xl border border-surface-container-high animate-in fade-in zoom-in-95 duration-200">
+      <div class="flex items-center justify-between pb-4 border-b border-surface-container-high">
+        <div>
+          <span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Konsultasi &amp;
+            Kolaborasi</span>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Jadwalkan Diskusi 15 Menit</h3>
+        </div>
+        <button onclick="closeModal('contact-modal')"
+          class="p-1 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4 pt-4">
+        <div>
+          <label class="block font-label-sm text-label-sm text-on-surface mb-1 font-medium">Nama Lengkap</label>
+          <input type="text" required placeholder="misal: Budi Santoso"
+            class="w-full px-3 py-2 bg-surface text-on-surface rounded border border-surface-container-high font-body-sm text-body-sm transition-all" />
+        </div>
+        <div>
+          <label class="block font-label-sm text-label-sm text-on-surface mb-1 font-medium">Email Kontak</label>
+          <input type="email" required placeholder="nama@instansi.com"
+            class="w-full px-3 py-2 bg-surface text-on-surface rounded border border-surface-container-high font-body-sm text-body-sm transition-all" />
+        </div>
+        <div>
+          <label class="block font-label-sm text-label-sm text-on-surface mb-1 font-medium">Topik Diskusi /
+            Peluang</label>
+          <select
+            class="w-full px-3 py-2 bg-surface text-on-surface rounded border border-surface-container-high font-body-sm text-body-sm transition-all">
+            <option>Konsultasi Arsitektur Software / Backend Go</option>
+            <option>Pengembangan Frontend &amp; Sistem Desain</option>
+            <option>Kontrak Riset &amp; Full-Stack Engineering</option>
+            <option>Diskusi Peluang Karir / Part-time / Full-time</option>
+          </select>
+        </div>
+        <div>
+          <label class="block font-label-sm text-label-sm text-on-surface mb-1 font-medium">Pesan Tambahan</label>
+          <textarea rows="3" placeholder="Ceritakan ringkas mengenai proyek, ekspektasi, atau tautan briefing..."
+            class="w-full px-3 py-2 bg-surface text-on-surface rounded border border-surface-container-high font-body-sm text-body-sm transition-all"></textarea>
+        </div>
+        <div class="flex items-center justify-end gap-2 pt-2">
+          <button type="button" onclick="closeModal('contact-modal')"
+            class="px-4 py-2 rounded bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors">
+            Batal
+          </button>
+          <button type="submit"
+            class="px-5 py-2 rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-colors inline-flex items-center gap-1.5 shadow-sm">
+            <span>Kirim Jadwal Diskusi</span>
+            <span class="material-symbols-outlined text-[16px]">send</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. CV Download & Preview Modal -->
+  <div id="cv-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/60 backdrop-blur-sm">
+    <div
+      class="relative w-full max-w-xl bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-2xl border border-surface-container-high">
+      <div class="flex items-center justify-between pb-4 border-b border-surface-container-high">
+        <div>
+          <span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Curriculum Vitae</span>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Resume Arya Danurdara, S.Kom</h3>
+        </div>
+        <button onclick="closeModal('cv-modal')"
+          class="p-1 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <div class="py-4 space-y-4">
+        <div class="p-4 rounded-xl bg-surface-container-low border border-surface-container-high space-y-2">
+          <div class="flex justify-between items-center text-label-sm font-label-sm text-secondary">
+            <span>VERSI RESMI (PDF)</span>
+            <span>Update: Oktober 2025</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Memuat ringkasan rekam jejak profesional 4+ tahun, publikasi riset komputasi terdistribusi, ijazah
+            terverifikasi STEI ITB, serta portofolio arsitektur cloud.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 text-label-sm font-label-sm">
+          <div class="p-3 rounded-lg bg-surface border border-surface-container-high">
+            <span class="text-on-surface-variant block mb-1">Format Berkas</span>
+            <strong class="text-on-surface">PDF Standar ATS-Friendly</strong>
+          </div>
+          <div class="p-3 rounded-lg bg-surface border border-surface-container-high">
+            <span class="text-on-surface-variant block mb-1">Ukuran File</span>
+            <strong class="text-on-surface">184 KB (High Precision)</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-end gap-2 pt-2 border-t border-surface-container-high">
+        <button onclick="closeModal('cv-modal')"
+          class="px-4 py-2 rounded bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors">
+          Tutup
+        </button>
+        <button onclick="triggerCvDownload()"
+          class="px-5 py-2 rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-colors inline-flex items-center gap-1.5 shadow-sm">
+          <span class="material-symbols-outlined text-[16px]">download</span>
+          <span>Unduh Berkas CV (.pdf)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Project Detail Modal -->
+  <div id="project-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/60 backdrop-blur-sm">
+    <div
+      class="relative w-full max-w-2xl bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-2xl border border-surface-container-high max-h-[90vh] overflow-y-auto">
+      <div class="flex items-start justify-between pb-3 border-b border-surface-container-high">
+        <div>
+          <span id="modal-project-badge"
+            class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold"></span>
+          <h3 id="modal-project-title" class="font-headline-lg text-headline-md text-on-surface font-medium mt-1"></h3>
+        </div>
+        <button onclick="closeModal('project-modal')"
+          class="p-1 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <div class="py-4 space-y-4">
+        <p id="modal-project-desc" class="font-body-md text-body-md text-on-surface leading-relaxed"></p>
+
+        <div class="p-4 rounded-xl bg-surface-container-low border border-surface-container-high space-y-2">
+          <h4 class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Sorotan
+            Arsitektur &amp; Hasil</h4>
+          <ul id="modal-project-highlights" class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"></ul>
+        </div>
+
+        <div>
+          <h4 class="font-label-sm text-label-sm text-on-surface mb-2 font-semibold">Teknologi &amp; Pustaka</h4>
+          <div id="modal-project-tags" class="flex flex-wrap gap-1.5"></div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between pt-4 border-t border-surface-container-high">
+        <span class="font-label-sm text-label-sm text-on-surface-variant" id="modal-project-metric"></span>
+        <div class="flex items-center gap-2">
+          <button onclick="closeModal('project-modal')"
+            class="px-3 py-1.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors">
+            Tutup
+          </button>
+          <a id="modal-project-link" href="#" target="_blank"
+            class="px-4 py-1.5 rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-colors inline-flex items-center gap-1">
+            <span>Buka Pratinjau</span>
+            <span class="material-symbols-outlined text-[14px]">north_east</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Certificate Verification Modal -->
+  <div id="cert-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/60 backdrop-blur-sm">
+    <div
+      class="relative w-full max-w-md bg-surface-container-lowest rounded-2xl p-6 shadow-2xl border border-surface-container-high">
+      <div class="flex items-center justify-between pb-3 border-b border-surface-container-high">
+        <div>
+          <span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Verifikasi Kredensial</span>
+          <h3 id="cert-modal-title" class="font-headline-sm text-body-md font-semibold text-on-surface mt-0.5"></h3>
+        </div>
+        <button onclick="closeModal('cert-modal')"
+          class="p-1 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <div class="py-4 space-y-3 font-label-sm text-label-sm">
+        <div
+          class="p-3 rounded-lg bg-surface-container-low border border-surface-container-high flex items-center justify-between">
+          <span class="text-on-surface-variant">Lembaga Penerbit</span>
+          <strong id="cert-modal-issuer" class="text-on-surface"></strong>
+        </div>
+        <div
+          class="p-3 rounded-lg bg-surface-container-low border border-surface-container-high flex items-center justify-between">
+          <span class="text-on-surface-variant">ID Kredensial</span>
+          <strong id="cert-modal-id" class="text-on-surface font-mono"></strong>
+        </div>
+        <div
+          class="p-3 rounded-lg bg-surface-container-low border border-surface-container-high flex items-center justify-between">
+          <span class="text-on-surface-variant">Masa Berlaku</span>
+          <strong id="cert-modal-validity" class="text-on-surface"></strong>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-end gap-2 pt-2 border-t border-surface-container-high">
+        <button onclick="closeModal('cert-modal')"
+          class="px-4 py-2 rounded bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors">
+          Tutup
+        </button>
+        <button onclick="showToast('Kredensial berhasil diverifikasi melalui lembaga resmi')"
+          class="px-4 py-2 rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-colors inline-flex items-center gap-1">
+          <span class="material-symbols-outlined text-[15px]">verified</span>
+          <span>Valid Terverifikasi</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Profile Quick Summary Modal -->
+  <div id="profile-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/60 backdrop-blur-sm">
+    <div
+      class="relative w-full max-w-sm bg-surface-container-lowest rounded-2xl p-6 shadow-2xl border border-surface-container-high text-center">
+      <div
+        class="w-16 h-16 rounded-full bg-primary text-on-primary mx-auto flex items-center justify-center mb-3 shadow-md">
+        <span class="material-symbols-outlined text-[32px]">person</span>
+      </div>
+      <h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Arya Danurdara, S.Kom</h3>
+      <p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider mt-1">Lead Design Engineer &amp;
+        Architect</p>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+        Alumni Institut Teknologi Bandung (STEI ITB). Spesialisasi dalam sistem terdistribusi, arsitektur UI berbasis
+        performa, dan rekayasa produk.
+      </p>
+      <div class="pt-4 mt-4 border-t border-surface-container-high flex justify-center gap-2">
+        <button onclick="closeModal('profile-modal')"
+          class="px-4 py-1.5 rounded bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors">
+          Tutup
+        </button>
+        <a href="#kontak" onclick="closeModal('profile-modal')"
+          class="px-4 py-1.5 rounded bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-colors">
+          Kontak Sekarang
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast"
+    class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-2 px-4 py-3 rounded-xl bg-primary text-on-primary shadow-xl font-label-sm text-label-sm border border-surface-container-highest/20">
+    <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+    <span id="toast-message">Pesan notifikasi</span>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- JAVASCRIPT LOGIC                           -->
+  <!-- ========================================== -->
+  <script>
+    // Project Data Definition
+    const projectData = {
+      aurawealth: {
+        badge: "Karya Unggulan • 2024",
+        title: "AuraWealth — Platform Investasi Adaptif",
+        desc: "Advisory portofolio ritel real-time dengan kalkulasi risiko sub-detik dan antarmuka editorial. Dirancang untuk menangani jutaan kalkulasi portofolio harian tanpa penurunan kecepatan antarmuka.",
+        highlights: [
+          "• Arsitektur microservices FastAPI dengan throughput > 1,200 kalkulasi/detik",
+          "• Desain UI kognitif adaptif yang menurunkan rasio churn investor pemula sebesar 28%",
+          "• Integrasi WebSocket real-time untuk feed indeks bursa sub-100ms",
+          "• Enkripsi level perbankan dengan sertifikasi ISO/IEC 27001 compliance"
+        ],
+        tags: ["Next.js 14", "FastAPI", "PostgreSQL", "Redis", "Tailwind CSS", "Docker"],
+        metric: "14.5k Pengguna Aktif Bulanan",
+        link: "#"
+      },
+      kliniksatu: {
+        badge: "Karya Unggulan • Healthtech",
+        title: "KlinikSatu: Telemedisin Terdistribusi",
+        desc: "Aplikasi konsultasi video WebRTC berdaya tahan tinggi, dioptimalkan secara spesifik untuk daerah dengan koneksi seluler 3G/EDGE di wilayah terpencil Indonesia.",
+        highlights: [
+          "• Algoritma adaptif codec WebRTC yang menurunkan konsumsi bandwidth hingga 40%",
+          "• Sinkronisasi rekam medis offline-first dengan SQLite dan conflict-free replicated data types",
+          "• Lebih dari 85,000 sesi tele-konsultasi berhasil diselesaikan tanpa putus sambungan"
+        ],
+        tags: ["React Native", "WebRTC", "Node.js", "Coturn", "PostgreSQL"],
+        metric: "85k+ Sesi Konsultasi Selesai",
+        link: "#"
+      },
+      komorebi: {
+        badge: "Sistem Ritel • Point of Sale",
+        title: "Komorebi: Core POS & Engine Sinkronisasi",
+        desc: "Sistem Point of Sale offline-first dengan kemampuan sinkronisasi otomatis transaksi terdistribusi untuk 12 jaringan gerai kafe dan ritel modern.",
+        highlights: [
+          "• Nol downtime transaksi saat pemadaman koneksi internet gerai",
+          "• Waktu cetak struk kasir dan respon transaksi rata-rata di bawah 45 milidetik",
+          "• Manajemen multi-gudang dan reorder level otomatis berbasis analitik stok harian"
+        ],
+        tags: ["Go Engine", "SQLite", "Electron", "React", "gRPC"],
+        metric: "12 Gerai Ritel • 180k+ Transaksi/Bln",
+        link: "#"
+      },
+      warpsync: {
+        badge: "Infrastruktur & Perkakas • CLI",
+        title: "WarpSync: Monorepo CLI & Build Cache",
+        desc: "Perkakas CLI berkecepatan tinggi yang dibangun dengan Rust untuk melakukan content-addressable build caching pada monorepo tim rekayasa skala besar.",
+        highlights: [
+          "• Mempercepat waktu kompilasi CI/CD dari 14 menit menjadi 2.3 menit (reduksi ~83%)",
+          "• Diadopsi oleh lebih dari 520 tim developer di GitHub",
+          "• Runtime berbasis WASM untuk eksekusi ekstensi kustom tanpa overhead binary terpisah"
+        ],
+        tags: ["Rust", "WASM", "Tokio", "Clap", "GitHub Actions"],
+        metric: "520+ GitHub Stars • 12k Downloads",
+        link: "#"
+      }
+    };
+
+    // Cert Data Definition
+    const certData = {
+      aws: {
+        title: "AWS Solutions Architect — Associate",
+        issuer: "Amazon Web Services (AWS)",
+        id: "AWS-SAA-2023-88914B",
+        validity: "Berlaku hingga November 2026"
+      },
+      google: {
+        title: "Google UX Design Professional Certificate",
+        issuer: "Google / Coursera",
+        id: "GGL-UXD-771902-A",
+        validity: "Seumur Hidup (Terverifikasi)"
+      },
+      meta: {
+        title: "Meta Front-End Developer Specialization",
+        issuer: "Meta Platforms Inc.",
+        id: "META-FED-993821-X",
+        validity: "Seumur Hidup (Terverifikasi)"
+      },
+      scrum: {
+        title: "Certified ScrumMaster® (CSM)",
+        issuer: "Scrum Alliance",
+        id: "CSM-00142981-2024",
+        validity: "Berlaku hingga Desember 2026"
+      }
+    };
+
+    // Modal Control Functions
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Close modal on Escape key press
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        ['contact-modal', 'cv-modal', 'project-modal', 'cert-modal', 'profile-modal'].forEach(closeModal);
+      }
+    });
+
+    // Close modal on clicking backdrop
+    document.querySelectorAll('.modal-backdrop').forEach(backdrop => {
+      backdrop.addEventListener('click', (e) => {
+        if (e.target === backdrop) {
+          closeModal(backdrop.id);
+        }
+      });
+    });
+
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+      const drawer = document.getElementById('mobile-drawer');
+      drawer.classList.toggle('hidden');
+    }
+
+    function closeMobileMenu() {
+      const drawer = document.getElementById('mobile-drawer');
+      drawer.classList.add('hidden');
+    }
+
+    // Modal Openers
+    function openContactModal() {
+      openModal('contact-modal');
+    }
+
+    function openCvModal() {
+      openModal('cv-modal');
+    }
+
+    function openProfileModal() {
+      openModal('profile-modal');
+    }
+
+    function openProjectModal(key) {
+      const p = projectData[key];
+      if (!p) return;
+      document.getElementById('modal-project-badge').innerText = p.badge;
+      document.getElementById('modal-project-title').innerText = p.title;
+      document.getElementById('modal-project-desc').innerText = p.desc;
+      document.getElementById('modal-project-metric').innerText = p.metric;
+
+      const hlContainer = document.getElementById('modal-project-highlights');
+      hlContainer.innerHTML = p.highlights.map(h => `<li>${h}</li>`).join('');
+
+      const tagsContainer = document.getElementById('modal-project-tags');
+      tagsContainer.innerHTML = p.tags.map(t => `<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">${t}</span>`).join('');
+
+      openModal('project-modal');
+    }
+
+    function openRepoModal(key) {
+      openProjectModal(key);
+    }
+
+    function openCertModal(key) {
+      const c = certData[key];
+      if (!c) return;
+      document.getElementById('cert-modal-title').innerText = c.title;
+      document.getElementById('cert-modal-issuer').innerText = c.issuer;
+      document.getElementById('cert-modal-id').innerText = c.id;
+      document.getElementById('cert-modal-validity').innerText = c.validity;
+      openModal('cert-modal');
+    }
+
+    // Toast notification
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+      toastMsg.innerText = message;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3200);
+    }
+
+    // Copy Email to Clipboard
+    function copyEmailToClipboard() {
+      const email = "arya.danurdara@alumni.itb.ac.id";
+      navigator.clipboard.writeText(email).then(() => {
+        showToast("Alamat email disalin ke clipboard!");
+      }).catch(() => {
+        showToast("Email: " + email);
+      });
+    }
+
+    // Download CV trigger
+    function triggerCvDownload() {
+      closeModal('cv-modal');
+      showToast("Mengunduh CV Arya Danurdara (PDF)...");
+      // Simulation of generating printable document or direct download
+      window.print();
+    }
+
+    // Contact Form Handler
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      closeModal('contact-modal');
+      showToast("Terima kasih! Permintaan diskusi Anda telah terkirim.");
+      e.target.reset();
+    }
+
+    // Project Gallery Filter Interaction
+    function filterProjects(tag) {
+      const buttons = document.querySelectorAll('.project-filter-btn');
+      const items = document.querySelectorAll('.project-item');
+
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-tag') === tag) {
+          btn.classList.remove('bg-surface-container-highest', 'text-on-surface');
+          btn.classList.add('bg-primary', 'text-on-primary');
+        } else {
+          btn.classList.remove('bg-primary', 'text-on-primary');
+          btn.classList.add('bg-surface-container-highest', 'text-on-surface');
+        }
+      });
+
+      items.forEach(item => {
+        const itemTags = item.getAttribute('data-tags') || '';
+        if (tag === 'all' || itemTags.includes(tag)) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Scroll Spy for Nav Active States
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let currentSection = '';
+      const scrollPosition = window.scrollY + 120;
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('bg-surface-container-high', 'text-on-surface', 'font-semibold');
+        link.classList.add('text-on-surface-variant');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('bg-surface-container-high', 'text-on-surface', 'font-semibold');
+          link.classList.remove('text-on-surface-variant');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
